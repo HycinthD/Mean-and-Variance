@@ -48,64 +48,32 @@ It shows the distance of a random variable from its mean. It is calcualted as
 ![image](https://user-images.githubusercontent.com/103921593/229993174-5b67e57e-3e01-4ac4-9f83-410a932b22bf.png)
 
 # Program :
-Developed By: Hycinth D
-
-Register No: 23006688
-
-##Program:
-
 import numpy as np
-
-A=[int(i) for i in input().split()]
-
-B=len(A); M=max(A) 
-
+L=[int(i) for i in input().split()]
+N=len(L); M=max(L) 
 x=list();f=list()
-
 for i in range (M+1):
-
     c = 0
-    
-    for j in range(B):
-    
-        if A[j]==i:
-        
+    for j in range(N):
+        if L[j]==i:
             c=c+1
-    f.append
-    (c)
-    
+    f.append(c)
     x.append(i)
-sf=n
-p.sum(f)
-
+sf=np.sum(f)
 p=list()
-
 for i in range(M+1):
-
     p.append(f[i]/sf) 
-mean
-=np.inner(x,p)
-
+mean=np.inner(x,p)
 EX2=np.inner(np.square(x),p)
-
 var=EX2-mean**2 
-
 SD=np.sqrt(var)
-
 print("The Mean arrival rate is %.3f "%mean)
-
 print("The Variance of arrival from feeder is %.3f "%var) 
-
 print("The Standard deviation of arrival from feeder is %.3F "%SD)
-
-
-
-
 
 # Output :
 
-![image](https://github.com/HycinthD/Mean-and-Variance/assets/144870810/1b9fda60-4920-4b61-a2ff-82522bd383bc)
-
+![image](https://github.com/HycinthD/Mean-and-Variance/assets/144870810/7abac6ba-b97a-48da-9de1-88012655b023)
 
 # Results :
 The mean and variance of arrivals of objects from feeder using probability distribution are calculated.
